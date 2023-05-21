@@ -1,0 +1,228 @@
+button {
+    // button
+    padding       : 6px 10px;
+    text-transform: capitalize;
+    font-weight   : 600;
+    cursor        : pointer;
+    margin        : 10px;
+
+    // contained
+
+    &.contained {
+        border       : solid 2px transparent;
+        border-radius: 4px;
+
+
+        &.primary {
+            background-color: var(--primary);
+            color           : var(--primary-invert);
+        }
+
+        &.secondary {
+            background-color: var(--secondary);
+            color           : var(--secondary-invert);
+        }
+
+        &.success {
+            background-color: var(--success);
+            color           : var(--success-invert);
+        }
+
+        &.info {
+            background-color: var(--info);
+            color           : var(--info-invert);
+        }
+
+        &.warning {
+            background-color: var(--warning);
+            color           : var(--warning-invert);
+        }
+
+        &.danger {
+            background-color: var(--danger);
+            color           : var(--danger-invert);
+        }
+
+        // contained hover
+
+        &.primary:hover {
+            background-color: var(--primary-dark);
+        }
+
+        &.secondary:hover {
+            background-color: var(--secondary-dark);
+        }
+
+        &.success:hover {
+            background-color: var(--success-dark);
+        }
+
+        &.info:hover {
+            background-color: var(--info-dark);
+        }
+
+        &.warning:hover {
+            background-color: var(--warning-dark);
+        }
+
+        &.danger:hover {
+            background-color: var(--danger-dark);
+        }
+
+        // disabled
+
+        &:disabled {
+            color       : var(--secondary-dark);
+            background-color: var(--secondary-lightest);
+        }
+
+    }
+
+    // outlined
+
+    &.outlined {
+        border          : solid 2px transparent;
+        border-radius   : 4px;
+        background-color: transparent;
+
+
+        &.primary {
+            border-color: var(--primary);
+            color       : var(--primary);
+        }
+
+        &.secondary {
+            border-color: var(--secondary);
+            color       : var(--secondary);
+        }
+
+        &.success {
+            border-color: var(--success);
+            color       : var(--success);
+        }
+
+        &.info {
+            border-color: var(--info);
+            color       : var(--info);
+        }
+
+        &.warning {
+            border-color: var(--warning);
+            color       : var(--warning);
+        }
+
+        &.danger {
+            border-color: var(--danger);
+            color       : var(--danger);
+        }
+
+        // hover
+
+        &.primary:hover {
+            background-color: var(--primary-contrast-bg);
+        }
+
+        &.secondary:hover {
+            background-color: var(--secondary-contrast-bg);
+        }
+
+        &.success:hover {
+            background-color: var(--success-contrast-bg);
+        }
+
+        &.info:hover {
+            background-color: var(--info-contrast-bg);
+        }
+
+        &.warning:hover {
+            background-color: var(--warning-contrast-bg);
+        }
+
+        &.danger:hover {
+            background-color: var(--danger-contrast-bg);
+        }
+
+        // disabled
+
+        &:disabled {
+            color       : var(--secondary);
+            border-color: var(--secondary);
+        }
+
+    }
+
+    // text
+
+    &.text {
+        border          : solid 2px transparent;
+        border-radius   : 4px;
+        background-color: transparent;
+
+
+        &.primary {
+            color: var(--primary);
+        }
+
+        &.secondary {
+            color: var(--secondary);
+        }
+
+        &.success {
+            color: var(--success);
+        }
+
+        &.info {
+            color: var(--info);
+        }
+
+        &.warning {
+            color: var(--warning);
+        }
+
+        &.danger {
+            color: var(--danger);
+        }
+
+        // hover
+
+        &.primary:hover {
+            background-color: var(--primary-contrast-bg);
+        }
+
+        &.secondary:hover {
+            background-color: var(--secondary-contrast-bg);
+        }
+
+        &.success:hover {
+            background-color: var(--success-contrast-bg);
+        }
+
+        &.info:hover {
+            background-color: var(--info-contrast-bg);
+        }
+
+        &.warning:hover {
+            background-color: var(--warning-contrast-bg);
+        }
+
+        &.danger:hover {
+            background-color: var(--danger-contrast-bg);
+        }
+
+        // disabled
+
+        &:disabled {
+            color: var(--secondary);
+        }
+
+    }
+
+    &:disabled {
+        pointer-events: none;
+    }
+
+    &.rounded {
+        border-radius: 999px;
+    }
+
+}

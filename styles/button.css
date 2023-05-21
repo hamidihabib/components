@@ -1,0 +1,160 @@
+button {
+  padding: 6px 10px;
+  text-transform: capitalize;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 10px;
+}
+button.contained {
+  border: solid 2px transparent;
+  border-radius: 4px;
+}
+button.contained.primary {
+  background-color: var(--primary);
+  color: var(--primary-invert);
+}
+button.contained.secondary {
+  background-color: var(--secondary);
+  color: var(--secondary-invert);
+}
+button.contained.success {
+  background-color: var(--success);
+  color: var(--success-invert);
+}
+button.contained.info {
+  background-color: var(--info);
+  color: var(--info-invert);
+}
+button.contained.warning {
+  background-color: var(--warning);
+  color: var(--warning-invert);
+}
+button.contained.danger {
+  background-color: var(--danger);
+  color: var(--danger-invert);
+}
+button.contained.primary:hover {
+  background-color: var(--primary-dark);
+}
+button.contained.secondary:hover {
+  background-color: var(--secondary-dark);
+}
+button.contained.success:hover {
+  background-color: var(--success-dark);
+}
+button.contained.info:hover {
+  background-color: var(--info-dark);
+}
+button.contained.warning:hover {
+  background-color: var(--warning-dark);
+}
+button.contained.danger:hover {
+  background-color: var(--danger-dark);
+}
+button.contained:disabled {
+  color: var(--secondary-dark);
+  background-color: var(--secondary-lightest);
+}
+button.outlined {
+  border: solid 2px transparent;
+  border-radius: 4px;
+  background-color: transparent;
+}
+button.outlined.primary {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+button.outlined.secondary {
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+button.outlined.success {
+  border-color: var(--success);
+  color: var(--success);
+}
+button.outlined.info {
+  border-color: var(--info);
+  color: var(--info);
+}
+button.outlined.warning {
+  border-color: var(--warning);
+  color: var(--warning);
+}
+button.outlined.danger {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+button.outlined.primary:hover {
+  background-color: var(--primary-contrast-bg);
+}
+button.outlined.secondary:hover {
+  background-color: var(--secondary-contrast-bg);
+}
+button.outlined.success:hover {
+  background-color: var(--success-contrast-bg);
+}
+button.outlined.info:hover {
+  background-color: var(--info-contrast-bg);
+}
+button.outlined.warning:hover {
+  background-color: var(--warning-contrast-bg);
+}
+button.outlined.danger:hover {
+  background-color: var(--danger-contrast-bg);
+}
+button.outlined:disabled {
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+button.text {
+  border: solid 2px transparent;
+  border-radius: 4px;
+  background-color: transparent;
+}
+button.text.primary {
+  color: var(--primary);
+}
+button.text.secondary {
+  color: var(--secondary);
+}
+button.text.success {
+  color: var(--success);
+}
+button.text.info {
+  color: var(--info);
+}
+button.text.warning {
+  color: var(--warning);
+}
+button.text.danger {
+  color: var(--danger);
+}
+button.text.primary:hover {
+  background-color: var(--primary-contrast-bg);
+}
+button.text.secondary:hover {
+  background-color: var(--secondary-contrast-bg);
+}
+button.text.success:hover {
+  background-color: var(--success-contrast-bg);
+}
+button.text.info:hover {
+  background-color: var(--info-contrast-bg);
+}
+button.text.warning:hover {
+  background-color: var(--warning-contrast-bg);
+}
+button.text.danger:hover {
+  background-color: var(--danger-contrast-bg);
+}
+button.text:disabled {
+  color: var(--secondary);
+}
+button:disabled {
+  pointer-events: none;
+}
+button.rounded {
+  border-radius: 999px;
+}
+
+/*# sourceMappingURL=button.css.map */
