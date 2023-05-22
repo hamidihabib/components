@@ -1,5 +1,4 @@
-export default interface buttonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export default interface buttonProps {
   /**
    * The content of the component.
    */
@@ -47,4 +46,9 @@ export default interface buttonProps
    * @default 'text'
    */
   variant?: "text" | "outlined" | "contained";
+  /**
+   * onClick event.
+   * @default 'undefined'
+   */
+  onClick?: () => void;
 }

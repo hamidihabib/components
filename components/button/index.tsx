@@ -1,5 +1,5 @@
 import buttonProps from "./buttonProps";
-import styles from "@/styles/button.module.css";
+import { useRouter } from "next/router";
 
 export default function Button({
   children,
@@ -10,9 +10,18 @@ export default function Button({
   fullWidth,
   href,
   rounded,
+  onClick,
+  ...props
 }: buttonProps) {
+  const router = useRouter();
+
+  function handleClick(e: { preventDefault: () => void }) {
+    e.preventDefault(), router.push(href == undefined ? "" : href);
+  }
+
   return (
     <button
+      onClick={handleClick}
       disabled={disabled}
       className={[
         variant,
@@ -21,6 +30,7 @@ export default function Button({
         fullWidth ? "fullWidth" : "",
         rounded ? "rounded" : "",
       ].join(" ")}
+      {...props}
     >
       {children}
     </button>

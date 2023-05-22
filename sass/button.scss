@@ -1,10 +1,17 @@
+$marginInline: 10px;
+
 button {
     // button
-    padding       : 6px 10px;
+    padding-block : 6px;
+    padding-inline: $marginInline;
     text-transform: capitalize;
     font-weight   : 600;
     cursor        : pointer;
-    margin        : 10px;
+    margin        : 5px;
+    vertical-align: middle;
+    display       : inline-flex;
+    align-items   : center;
+    column-gap    : $marginInline;
 
     // contained
 
@@ -72,7 +79,7 @@ button {
         // disabled
 
         &:disabled {
-            color       : var(--secondary-dark);
+            color           : var(--secondary-dark);
             background-color: var(--secondary-lightest);
         }
 
