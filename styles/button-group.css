@@ -1,0 +1,47 @@
+.button-group {
+  width: max-content;
+  margin: 10px;
+}
+.button-group.row button {
+  border-radius: 0px;
+  border-left-width: 1px !important;
+  border-right-width: 1px !important;
+}
+.button-group.row :first-child {
+  border-radius: 5px 0 0 5px;
+  border-left-width: 2px !important;
+}
+.button-group.row :last-child {
+  border-radius: 0 5px 5px 0;
+  border-right-width: 2px !important;
+}
+.button-group.column {
+  display: flex;
+  flex-direction: column;
+}
+.button-group.column button {
+  border-radius: 0px;
+  display: flex;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  width: 100%;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.button-group.column button svg {
+  display: inline-flex;
+  vertical-align: bottom;
+}
+.button-group.column :first-child {
+  border-top-width: 2px;
+  border-radius: 5px 5px 0 0;
+  border-left-width: 2px !important;
+}
+.button-group.column :last-child {
+  border-radius: 0 0 5px 5px;
+  border-right-width: 2px !important;
+  border-bottom-width: 2px;
+}
+
+/*# sourceMappingURL=button-group.css.map */

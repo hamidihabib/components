@@ -1,19 +1,26 @@
+import Alert from "@/components/alert";
 import Button from "@/components/button";
+import ButtonGroup from "@/components/buttonGroup";
 import Icon from "@/components/icon";
 import React from "react";
 
 export default function Home() {
   return (
     <div>
-      <Button  onClick={()=>alert("ok")}  href="/components" color="danger" variant="text">
-        button <Icon.ArrowRight/>
-      </Button>
-      <Button color="danger" variant="outlined">
-        button
-      </Button>
-      <Button color="danger" variant="text">
-        button
-      </Button>
+      <ButtonGroup direction="row">
+        <Button variant="contained" color="info">
+          Button
+          <Icon.ArrowRight />
+        </Button>
+        <Button variant="contained" color="info">
+          Button
+          <Icon.ArrowRight />
+        </Button>
+        <Button variant="contained" color="info">
+          Button
+          <Icon.ArrowRight />
+        </Button>
+      </ButtonGroup>
     </div>
   );
 }

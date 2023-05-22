@@ -1,9 +1,19 @@
-import React from "react";
 import ArrowLeft from "./ArrowLeft";
 import ArrowRight from "./ArrowRight";
+import CircleCheck from "./CircleCheck";
+import CircleExclamation from "./CircleExclamation";
+import CircleInfo from "./CircleInfo";
+import TriangleExclamation from "./TriangleExclamation";
 
 function Icons() {
-  return { ArrowLeft, ArrowRight };
+  return {
+    ArrowLeft,
+    ArrowRight,
+    CircleCheck,
+    CircleExclamation,
+    CircleInfo,
+    TriangleExclamation,
+  };
 }
 
 const Icon = Icons();
