@@ -1,6 +1,6 @@
 import React from "react";
 import alertProps from "./alertProps";
-import Icon from "../icon";
+import Svg from "../svg";
 
 export default function Blockquote({
   children,
@@ -10,13 +10,13 @@ export default function Blockquote({
 }: alertProps) {
   const Icons =
     color == "danger" ? (
-      <Icon.CircleExclamation />
+      <Svg name="circle-exclamation" />
     ) : color == "info" ? (
-      <Icon.CircleInfo />
+      <Svg name="circle-info" />
     ) : color == "warning" ? (
-      <Icon.TriangleExclamation />
+      <Svg name="triangle-exclamation" />
     ) : (
-      <Icon.CircleCheck />
+      <Svg name="circle-check" />
     );
 
   return (
