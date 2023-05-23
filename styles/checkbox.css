@@ -1,0 +1,22 @@
+.checkbox {
+  position: relative;
+  display: block;
+  height: 100px;
+}
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkbox span {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: solid 2px blue;
+}
+
+/*# sourceMappingURL=checkbox.css.map */

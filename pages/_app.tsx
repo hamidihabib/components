@@ -3,6 +3,8 @@ import "@/styles/button.css";
 import "@/styles/globals.css";
 import "@/styles/alert.css";
 import "@/styles/button-group.css";
+import "@/styles/checkbox.css";
+import "@/styles/rating.css";
 import type { AppProps } from "next/app";
 import Layout from "@/components/layout";
 

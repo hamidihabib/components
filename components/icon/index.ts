@@ -4,6 +4,7 @@ import CircleCheck from "./CircleCheck";
 import CircleExclamation from "./CircleExclamation";
 import CircleInfo from "./CircleInfo";
 import TriangleExclamation from "./TriangleExclamation";
+import Star from "./star";
 
 function Icons() {
   return {
@@ -13,6 +14,7 @@ function Icons() {
     CircleExclamation,
     CircleInfo,
     TriangleExclamation,
+    Star,
   };
 }
 
