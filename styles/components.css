@@ -1,0 +1,22 @@
+.components {
+  display: grid;
+  grid-template-columns: 200px auto;
+}
+.components .aside {
+  grid-column: 1/2;
+  padding: 10px;
+  border-right: 1px lightgray solid;
+  min-height: 100vh;
+}
+.components .aside ul {
+  padding: 10px;
+}
+.components .aside li {
+  list-style: none;
+}
+.components .article {
+  grid-column: 2/3;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=components.css.map */

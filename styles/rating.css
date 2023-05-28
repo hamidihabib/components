@@ -1,11 +1,14 @@
 .rating {
   display: flex;
   flex-direction: row;
-  column-gap: 5px;
   width: max-content;
 }
 .rating svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding-inline: 3px;
   cursor: pointer;
+  display: block;
 }
 
 /*# sourceMappingURL=rating.css.map */

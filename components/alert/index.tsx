@@ -1,6 +1,6 @@
 import React from "react";
 import alertProps from "./alertProps";
-import Svg from "../svg";
+import Svg from "../icon";
 
 export default function Blockquote({
   children,

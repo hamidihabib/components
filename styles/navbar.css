@@ -1,0 +1,23 @@
+.navbar {
+  display: grid;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  padding-inline: 20px;
+  grid-template-columns: max-content max-content 1fr max-content;
+}
+.navbar .logo {
+  padding: 10px;
+}
+.navbar .menu ul {
+  display: flex;
+}
+.navbar .menu ul li {
+  list-style: none;
+  padding: 10px;
+}
+.navbar .sign-in {
+  justify-self: end;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=navbar.css.map */

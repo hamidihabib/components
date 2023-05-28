@@ -1,0 +1,6 @@
+{
+  "button": {
+    "color": ["primary", "secondary", "success", "info", "warning", "error"],
+    "size": ["small", "medium", "large"]
+  }
+}

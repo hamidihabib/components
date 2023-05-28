@@ -1,7 +1,7 @@
-import svg from "./svg.json";
+import svg from "./icon.json";
 import svgProps from "./svgProps";
 
-export default function Svg({ name,...props}: svgProps) {
+export default function Icon({ name,...props}: svgProps) {
   var s = svg[name];
   return (
     <svg
