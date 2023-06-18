@@ -9,7 +9,6 @@ export default function Main({ children }: Props) {
     <main>
       <div className="container">
         <Navbar />
-
         {children}
       </div>
     </main>
