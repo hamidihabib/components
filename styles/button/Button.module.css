@@ -1,0 +1,279 @@
+.button {
+    font-weight    : 600;
+    display        : inline-flex;
+    vertical-align : middle;
+    border         : transparent 0.1rem solid;
+    justify-content: space-evenly;
+    align-items    : center;
+    cursor         : pointer;
+}
+
+/* size */
+.size-sm {
+    padding    : 0.25rem 0.5rem;
+    font-size  : 0.75rem;
+    line-height: 1rem;
+}
+
+.size-md {
+    padding: 0.25rem 0.5rem;
+}
+
+.size-lg {
+    padding: 0.375rem 0.625rem;
+}
+
+.size-xl {
+    padding: 0.5rem 0.75rem;
+}
+
+.size-2xl {
+    padding: 0.625rem 0.875rem;
+}
+
+:where(.size-md, .size-lg, .size-xl, .size-2xl) {
+    line-height: 1.25rem;
+    font-size  : 0.875rem;
+}
+
+/* rounded */
+.rounded-none {
+    border-radius: 0rem;
+}
+
+.rounded-sm {
+    border-radius: 0.125rem;
+}
+
+.rounded {
+    border-radius: 0.25rem;
+}
+
+.rounded-md {
+    border-radius: 0.375rem;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.rounded-xl {
+    border-radius: 0.75rem;
+}
+
+.rounded-2xl {
+    border-radius: 1rem;
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
+/* variant */
+.text {
+    background-color: transparent;
+}
+
+.text.primary {
+    color: var(--primary-500);
+}
+
+.text.secondary {
+    color: var(--secondary-500);
+}
+
+.text.info {
+    color: var(--info-500);
+}
+
+.text.success {
+    color: var(--success-500);
+}
+
+.text.warning {
+    color: var(--warning-500);
+}
+
+.text.error {
+    color: var(--error-500);
+}
+
+/* text hover */
+.text.primary:hover {
+    background-color: var(--primary-transparent);
+}
+
+.text.secondary:hover {
+    background-color: var(--secondary-transparent);
+}
+
+.text.info:hover {
+    background-color: var(--info-transparent);
+}
+
+.text.success:hover {
+    background-color: var(--success-transparent);
+}
+
+.text.warning:hover {
+    background-color: var(--warning-transparent);
+}
+
+.text.error:hover {
+    background-color: var(--error-transparent);
+}
+
+/* contained */
+.contained.primary {
+    background-color: var(--primary-500);
+}
+
+.contained.secondary {
+    background-color: var(--secondary-500);
+}
+
+.contained.info {
+    background-color: var(--info-500);
+}
+
+.contained.success {
+    background-color: var(--success-500);
+}
+
+.contained.warning {
+    background-color: var(--warning-500);
+}
+
+.contained.error {
+    background-color: var(--error-500);
+}
+
+.contained:where(.primary, .secondary, .info, .success, .warning, .error) {
+    color: var(--white);
+}
+
+/* contained hover */
+.contained.primary:hover {
+    background-color: var(--primary-400);
+}
+
+.contained.secondary:hover {
+    background-color: var(--secondary-400);
+}
+
+.contained.info:hover {
+    background-color: var(--info-400);
+}
+
+.contained.success:hover {
+    background-color: var(--success-400);
+}
+
+.contained.warning:hover {
+    background-color: var(--warning-400);
+}
+
+.contained.error:hover {
+    background-color: var(--error-400);
+}
+
+/* outlined */
+.outlined {
+    background-color: transparent;
+}
+
+.outlined.primary {
+    border-color: var(--primary-500);
+    color       : var(--primary-500);
+}
+
+.outlined.secondary {
+    border-color: var(--secondary-500);
+    color       : var(--secondary-500);
+}
+
+.outlined.info {
+    border-color: var(--info-500);
+    color       : var(--info-500);
+}
+
+.outlined.success {
+    border-color: var(--success-500);
+    color       : var(--success-500);
+}
+
+.outlined.warning {
+    border-color: var(--warning-500);
+    color       : var(--warning-500);
+}
+
+.outlined.error {
+    border-color: var(--error-500);
+    color       : var(--error-500);
+}
+
+/* outlined hover */
+.outlined.primary:hover {
+    background-color: var(--primary-transparent);
+}
+
+.outlined.secondary:hover {
+    background-color: var(--secondary-transparent);
+}
+
+.outlined.info:hover {
+    background-color: var(--info-transparent);
+}
+
+.outlined.success:hover {
+    background-color: var(--success-transparent);
+}
+
+.outlined.warning:hover {
+    background-color: var(--warning-transparent);
+}
+
+.outlined.error:hover {
+    background-color: var(--error-transparent);
+}
+
+/* disabled */
+.button:disabled {
+    cursor: default;
+}
+
+.text:disabled {
+    color: var(--secondary-300);
+}
+
+.text:disabled:hover {
+    background-color: transparent;
+}
+
+.contained:disabled {
+    background-color: var(--secondary-100);
+    color           : var(--secondary-300);
+}
+
+.contained:disabled:hover {
+    background-color: var(--secondary-100);
+}
+
+.outlined:disabled {
+    border-color: var(--secondary-100);
+    color       : var(--secondary-300);
+}
+
+.outlined:disabled:hover {
+    border-color    : var(--secondary-100);
+    color           : var(--secondary-300);
+    background-color: transparent;
+}
+
+.start_icon {
+    padding-right: 0.5rem;
+}
+
+.end_icon {
+    padding-left: 0.5rem;
+}
