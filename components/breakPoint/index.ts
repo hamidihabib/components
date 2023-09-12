@@ -1,6 +1,6 @@
 import useWindowSize from "../useWindowSize";
 
-export default function index() {
+export default function BreakPoint() {
   const { width } = useWindowSize();
   return width <= 640
     ? "sm"
