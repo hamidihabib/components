@@ -72,6 +72,7 @@
 /* variant */
 .text {
     background-color: transparent;
+    box-shadow: none;
 }
 
 .text.primary {
@@ -180,6 +181,7 @@
 /* outlined */
 .outlined {
     background-color: transparent;
+    background: transparent;
 }
 
 .outlined.primary {
@@ -277,3 +279,4 @@
 .end_icon {
     padding-left: 0.5rem;
 }
+

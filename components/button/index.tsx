@@ -11,7 +11,7 @@ export default function Button({
   disabled,
   href,
   rounded = "rounded",
-  shadow = "shadow-md",
+  shadow = "shadow-sm",
   endIcon,
   startIcon,
   ...props
@@ -31,8 +31,8 @@ export default function Button({
         styles[variant],
         styles[color],
         styles[size],
-        styles[shadow],
         styles[rounded],
+        shadow,
       ].join(" ")}
       disabled={disabled}
       {...props}

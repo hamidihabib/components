@@ -43,9 +43,12 @@ export type ButtonTypes = React.JSX.IntrinsicAttributes &
      */
     shadow?:
       | "shadow-sm"
+      | "shadow"
       | "shadow-md"
       | "shadow-lg"
       | "shadow-xl"
+      | "shadow-2xl"
+      | "shadow-inner"
       | "shadow-none";
     /**
      * The variant to use.

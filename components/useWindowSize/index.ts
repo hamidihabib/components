@@ -6,20 +6,20 @@
 import { useEffect, useState } from "react";
 
 type WindowSize = {
-  width: number | undefined;
-  height: number | undefined;
+  width: number;
+  height: number;
 };
 
 const useWindowSize = (): WindowSize => {
   const [windowSize, setWindowSize] = useState<WindowSize>({
-    width: undefined,
-    height: undefined,
+    width: 500,
+    height: 500,
   });
   useEffect(() => {
     function handleResize(): void {
       setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
+        width: window.innerWidth | 500,
+        height: window.innerHeight | 500,
       });
     }
     handleResize();
