@@ -1,15 +1,15 @@
-import React from "react";
 import { ButtonTypes } from "@/types/ButtonTypes";
 import { useRouter } from "next/router";
 
-export default function ButtonOutlined({
+export default function Button({
   children,
-  color,
   disabled,
   href,
-  rounded,
-  shadow,
-  size,
+  rounded = "rounded",
+  shadow = "shadow",
+  color = "primary",
+  size = "size-md",
+  variant = "contained",
   startIcon,
   endIcon,
 }: ButtonTypes) {
@@ -22,9 +22,9 @@ export default function ButtonOutlined({
   };
   return (
     <button
-      onClick={handleClick}
+      className={[variant, size, color, shadow, rounded].join(" ")}
       disabled={disabled}
-      className={[size, color, shadow, rounded].join(" ")}
+      onClick={handleClick}
     >
       {startIcon && <span>{startIcon}</span>}
       {children && <span>{children}</span>}

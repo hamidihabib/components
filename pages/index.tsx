@@ -1,17 +1,13 @@
-import ButtonOutlined from "@/components/button/outlined";
+import Button from "@/components/button";
 import Icon from "@/icons";
 import React, { useState } from "react";
 
 export default function Home() {
-  const [Test, setTest] = useState(false);
-  setTimeout(() => {
-    setTest(!Test);
-  }, 1000);
   return (
     <div>
-      <ButtonOutlined>
-        Test
-      </ButtonOutlined>
+      <Button color="error" rounded="rounded-full" variant="text">Button</Button>
+      <Button color="error" rounded="rounded-full" variant="contained">Button</Button>
+      <Button color="error" rounded="rounded-full" variant="outlined">Button</Button>
     </div>
   );
 }
