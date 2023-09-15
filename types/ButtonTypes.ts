@@ -1,6 +1,4 @@
-export type ButtonTypes = React.JSX.IntrinsicAttributes &
-  React.ClassAttributes<HTMLButtonElement> &
-  React.ButtonHTMLAttributes<HTMLButtonElement> & {
+export type ButtonTypes =  {
     /**
      * The content of the button.
      */
