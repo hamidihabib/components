@@ -4,7 +4,13 @@ import Button from "@/components/button";
 export default function Home() {
   return (
     <div>
-      <Button.Contained  rounded="rounded-full">
+      <Button.Contained color="error">
+        Button
+      </Button.Contained>
+      <Button.Contained color="error">
+        Button
+      </Button.Contained>
+      <Button.Contained color="error">
         Button
       </Button.Contained>
     </div>

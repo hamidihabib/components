@@ -1,4 +1,4 @@
-import { ButtonTypes } from "@/types/ButtonTypes";
+import ButtonTypes from "@/types/ButtonTypes";
 import { useRouter } from "next/router";
 import styles from "@/styles/button/text.module.css";
 
