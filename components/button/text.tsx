@@ -1,15 +1,14 @@
 import { ButtonTypes } from "@/types/ButtonTypes";
 import { useRouter } from "next/router";
+import styles from "@/styles/button/text.module.css";
 
-export default function Button({
+export default function ButtonText({
   children,
-  disabled,
   href,
-  rounded = "rounded",
-  shadow = "shadow",
   color = "primary",
+  rounded = "rounded",
   size = "size-md",
-  variant = "contained",
+  disabled,
   startIcon,
   endIcon,
 }: ButtonTypes) {
@@ -20,11 +19,17 @@ export default function Button({
       router.push(href);
     }
   };
+
   return (
     <button
-      className={[variant, size, color, shadow, rounded].join(" ")}
-      disabled={disabled}
+      className={[
+        styles.button,
+        !disabled && styles[color],
+        size,
+        rounded,
+      ].join(" ")}
       onClick={handleClick}
+      disabled={disabled}
     >
       {startIcon && <span>{startIcon}</span>}
       {children && <span>{children}</span>}
